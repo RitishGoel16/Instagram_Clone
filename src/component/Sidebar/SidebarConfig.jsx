@@ -39,9 +39,9 @@ import { CgProfile } from "react-icons/cg";
     },
     {
         title:"Profile",
-        icon: "👤",
+        icon: <CgProfile></CgProfile>,
         // <CgProfile></CgProfile>
-        activeIcon: <CgProfile></CgProfile>
+        activeIcon:"👤"
     },
 
 

@@ -5,7 +5,7 @@ const Profile = () => {
 
     return (
 
-        <div>
+        <div className='px-20'>
             <div><ProfileUserDetail/></div>
             
             <div><RequestUserPostPart/></div>

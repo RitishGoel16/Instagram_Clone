@@ -2,12 +2,12 @@ import React from 'react'
 import { TbCircleDashed } from 'react-icons/tb'
 const ProfileUserDetail = () => {
     return (
-        <div className='py-10 w-full'>
+        <div className='py-14 w-full'>
 
-            <div className='flex items-center m-9 ml-20'>
+            <div className='flex items-center  '>
 
                 <div className='w-[15]'  >
-                    <img className='w-52 h-52 rounded-full ' src="https://cdn.pixabay.com/photo/2023/11/02/16/47/dawn-8361032_1280.jpg" alt="" />
+                    <img className='w-44 h-44 rounded-full ' src="https://cdn.pixabay.com/photo/2023/11/02/16/47/dawn-8361032_1280.jpg" alt="" />
                 </div>
 
                 <div className='space-y-5 ml-4'>
@@ -36,7 +36,7 @@ const ProfileUserDetail = () => {
                     <div className=' '>
                         
                             <p className='flex  ml-10'>Username</p>
-                            <p className='flex ml-8 mt-5 text-justify'>
+                            <p className='flex ml-8 mt-2 text-justify'>
                             🤔 Can’t seem to recall where I stole this bio from or why.<br/>
                             🥩 Certified meat-eater!<br/>
                             🍫 Chocolate never asks questions. Chocolate understands.<br/>

@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { IoReorderThree } from "react-icons/io5";
 import { menu } from './SidebarConfig';
 import { useNavigate } from 'react-router-dom';
+import { useDisclosure } from '@chakra-ui/react';
+import CreatePostModal from '../Post/CreatePostModal';
 const Sidebar = () => {
     const [activeTab, setActiveTab] = useState();
-
+    const { isOpen, onOpen, onClose } = useDisclosure()
     const navigate = useNavigate();
 
     let handleTabClick = (title) => {
@@ -14,6 +16,9 @@ const Sidebar = () => {
         }
         else if (title === "Home") {
             navigate("/")
+        }
+        else if (title==="Create"){
+             onOpen()
         }
     }
     return (
@@ -30,6 +35,7 @@ const Sidebar = () => {
                             <div onClick={() => handleTabClick(item.title)}
                                 className='flex items-center mb-5 cursor-pointer text-xl pl-2 '>
                                 <p>{activeTab === item.title ? item.activeIcon : item.icon}</p>
+                               
                                 <p className={`${activeTab === item.title ? 'font-bold' : "font-normal"} ml-2`}>{item.title}</p>
 
                             </div>)}
@@ -41,6 +47,7 @@ const Sidebar = () => {
                     <p className='ml-2 text-xl'>More</p>
                 </div>
             </div>
+            <CreatePostModal onClose={onClose} isOpen={isOpen}/>
         </div>
 
     )
