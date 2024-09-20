@@ -24,10 +24,11 @@ useEffect(()=>{
 },[activeIndex])
     const isActive = index = activeIndex;
 
+
     return (
         <div>
             <div className={`${isActive}?"progress bar":""`} style={{ width: "{progress}%" }}>
-
+<p>testing</p>
             </div>
         </div>
     )
