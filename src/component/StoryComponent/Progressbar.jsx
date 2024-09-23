@@ -31,6 +31,7 @@ const Progressbar = ({ index, activeIndex, duration }) => {
                 style={{ width: `${progress}%` }}>
                 <p>testing</p>
             </div>
+            <div>hello</div>
         </div>
     )
 }
