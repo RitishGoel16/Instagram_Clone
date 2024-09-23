@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { Modal, ModalOverlay, ModalContent, Button, ModalBody, Img, } from '@chakra-ui/react'
+import { Modal, ModalOverlay, ModalContent, Button, ModalBody } from '@chakra-ui/react'
 import { FaPhotoVideo } from 'react-icons/fa';
 import { GrEmoji } from 'react-icons/gr'
 import { GoLocation } from 'react-icons/go'
 import './CreatePostModal.css'
 const CreatePostModal = ({ onClose, isOpen }) => {
-    const [isDragover, setDragOver] = useState(false);
+    // const [isDragover, setDragOver] = useState(false);
     const [file, Setfile] = useState();
     const [caption, setcaption] = useState("");
     const handleDrop = (event) => {
@@ -18,7 +18,7 @@ const CreatePostModal = ({ onClose, isOpen }) => {
     const handleDragover = (event) => {
         event.preventDefault();
         event.dataTransfer.dropEffect = 'copy';
-        setDragOver(true);
+        // setDragOver(true);
     }
     const handleDragleave = (event) => {
         event.preventDefault();
@@ -72,7 +72,7 @@ const CreatePostModal = ({ onClose, isOpen }) => {
 
                                             <input type="file" className='input' id='file-upload' accept='image/*,video/*' onChange={handleOnchange} />
                                         </div>}
-                                    {file && <div className='h-[60vh]'><img className='h-[60vh] ' src={URL.createObjectURL(file)}></img></div>}
+                                    {file && <div className='h-[60vh]'><img className='h-[60vh]' alt='url' src={URL.createObjectURL(file)}></img></div>}
                                 </div>
 
                             </div>

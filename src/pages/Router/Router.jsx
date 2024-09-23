@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from '../../component/Sidebar/Sidebar';
 import Homepage from '../Homepage/Homepage';
 import Profile from '../Profile/Profile';
-
+import Story from '../../component/Story/Story';
 const Router = () => {
     return (
         <div>
@@ -15,6 +15,7 @@ const Router = () => {
                     <Routes>
                         <Route path="/" element={<Homepage />} />
                         <Route path="/username" element={<Profile />} />
+                        <Route path="/story" element={<Story/>}></Route>
                     </Routes>
                 </div>
             </div>
