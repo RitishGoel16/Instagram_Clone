@@ -4,6 +4,7 @@ import Sidebar from '../../component/Sidebar/Sidebar';
 import Homepage from '../Homepage/Homepage';
 import Profile from '../Profile/Profile';
 import Story from '../../component/Story/Story';
+import SearchComponent from '../../component/SearchComponent/SearchComponent';
 const Router = () => {
     return (
         <div>
@@ -16,6 +17,7 @@ const Router = () => {
                         <Route path="/" element={<Homepage />} />
                         <Route path="/username" element={<Profile />} />
                         <Route path="/story" element={<Story/>}></Route>
+                        <Route path="/Search" element={<SearchComponent/>}></Route>
                     </Routes>
                 </div>
             </div>
