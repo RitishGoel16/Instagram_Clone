@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 
-const StoryCircle = ({  }) => {
+const StoryCircle = () => {
     const navigate = useNavigate();
 
     const handleTabClick = () => {
